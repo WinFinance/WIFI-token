@@ -74,83 +74,23 @@
         <div class="modal-content pb-0">
           <div class="popup-body">
             <h4 class="popup-title">Connect to Secure Wallet</h4>
-            <p class="lead">
-              To receiving
-              <strong>18,750 TWZ</strong> tokens including
-              <strong>bonus 1,540 TWZ</strong> require payment amount of
-              <strong>1.0 ETH</strong>.
-            </p>
-            <p>
-              You can choose any of following payment method to make your
-              payment. The tokens balance will appear in your account after
-              successfull payment.
-            </p>
-            <h5 class="mgt-1-5x font-mid">Select payment method:</h5>
+            <h5 class="mgt-1-5x font-mid">Select Wallet:</h5>
             <ul class="pay-list guttar-20px">
               <li class="pay-item">
                 <input type="radio" class="pay-check" name="pay-option" id="pay-coin" />
                 <label class="pay-check-label" for="pay-coin">
-                  <img src="images/pay-a.png" alt="pay-logo" />
+                  <img src="assets/images/Metamask.png" alt="metamask" />
                 </label>
               </li>
-              <li class="pay-item">
+              <li class="pay-item" style="width: 50%">
                 <input type="radio" class="pay-check" name="pay-option" id="pay-coinpay" />
                 <label class="pay-check-label" for="pay-coinpay">
-                  <img src="images/pay-b.png" alt="pay-logo" />
+                  <img src="assets/images/walletconnect.png" alt="wallet connect" />
                 </label>
-              </li>
-              <li class="pay-item">
-                <input type="radio" class="pay-check" name="pay-option" id="pay-paypal" />
-                <label class="pay-check-label" for="pay-paypal">
-                  <img src="images/pay-c.png" alt="pay-logo" />
-                </label>
-              </li>
-            </ul>
-            <span class="text-light font-italic mgb-2x">
-              <small>
-                * Payment gateway company may charge you a processing
-                fees.
-              </small>
-            </span>
-            <div class="pdb-2-5x pdt-1-5x">
-              <input type="checkbox" class="input-checkbox input-checkbox-md" id="agree-term-3" />
-              <label for="agree-term-3">
-                I hereby agree to the
-                <strong>token purchase aggrement &amp; token sale term</strong>.
-              </label>
-            </div>
-            <ul class="d-flex flex-wrap align-items-center guttar-30px">
-              <li>
-                <a
-                  href="#"
-                  data-dismiss="modal"
-                  data-toggle="modal"
-                  data-target="#pay-review"
-                  class="btn btn-primary"
-                >
-                  Buy Tokens &amp; Process to Pay
-                  <em class="ti ti-arrow-right mgl-2x"></em>
-                </a>
-              </li>
-              <li class="pdt-1x pdb-1x">
-                <a
-                  href="#"
-                  data-dismiss="modal"
-                  data-toggle="modal"
-                  data-target="#get-pay-address"
-                  class="link link-primary"
-                >Make Manual Payment</a>
               </li>
             </ul>
             <div class="gaps-2x"></div>
             <div class="gaps-1x d-none d-sm-block"></div>
-            <div class="note note-plane note-light mgb-1x">
-              <em class="fas fa-info-circle"></em>
-              <p class="text-light">
-                You will automatically redirect for payment after your order
-                placing.
-              </p>
-            </div>
           </div>
         </div>
         <!-- .modal-content -->

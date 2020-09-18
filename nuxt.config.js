@@ -17,10 +17,13 @@ export default {
     ],
     script: [
       { src: '/assets/js/jquery.bundle49f7.js', body: true},
-      { src: 'assets/js/script49f7.js', body: true}
+      { src: '/assets/js/script49f7.js', body: true}
+
     ]
   },
-
+  generate: {
+    fallback: true
+  },
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
   ],

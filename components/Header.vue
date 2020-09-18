@@ -65,6 +65,24 @@
                 <em class="ikon ikon-exchange"></em> FAQ
               </a>
             </li>
+            
+                 <li>
+                    <li>
+                    <a href="https://t.me/winfinanceofficial">
+                      <em class="ikon fab fa-telegram"></em>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <em class=" ikon fab fa-twitter"></em>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <em class="ikon fab fa-github"></em>
+                    </a>
+                  </li>
+                 </li>
           </ul>
         </div>
         <!-- .navbar-innr -->

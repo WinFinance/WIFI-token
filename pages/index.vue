@@ -22,7 +22,6 @@
                         type="number"
                         min="0.41"
                         max="20"
-                        value="1"
                         v-model="ethMinimum"
                       />
                       <div class="token-pay-currency">
@@ -37,15 +36,17 @@
                       </div>
                     </div>
                   </div>
+                  {{ethMinimum}}
                   <div class="token-calc-note note note-plane">
-                    <template v-if="ethMinimum < 0.42">
+                    <div v-show="ethMinimum < 0.42">
                       <em class="fas fa-times-circle text-danger"></em>
                       <span class="note-text text-light">0.42 ETH minimum contribution require.</span>
-                    </template>
-                    <template v-if="ethMinimum > 20">
+                    </div>
+                    <div v-show="ethMinimum > 20">
                       <em class="fas fa-times-circle text-danger"></em>
                       <span class="note-text text-light">20 ETH maximum contribution Allowed.</span>
-                    </template>
+                    </div>
+                  
                   </div>
                 </div>
                 <div class="token-overview-wrap">
@@ -117,9 +118,7 @@
                   <p>
                     You can get a quick response and chat with our team in
                     Telegram:
-                    <a
-                      href="#"
-                    >https://t.me/winfinance</a>
+                    <a :href="telegram" target="_blank">Link Here</a>
                   </p>
                 </div>
                 <div class="gaps-3x"></div>
@@ -221,10 +220,10 @@
                   <!-- .copy-wrap -->
                 </div>
                 <ul class="share-links">
-                  <li>Share with :</li>
+                  <li>Connect with us:</li>
                   <li>
-                    <a href="#">
-                      <em class="fab fa-google-plus-g"></em>
+                    <a href="https://t.me/winfinanceofficial">
+                      <em class="fab fa-telegram"></em>
                     </a>
                   </li>
                   <li>
@@ -234,12 +233,7 @@
                   </li>
                   <li>
                     <a href="#">
-                      <em class="fab fa-facebook-f"></em>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      <em class="fab fa-linkedin-in"></em>
+                      <em class="fab fa-github"></em>
                     </a>
                   </li>
                 </ul>
@@ -347,7 +341,7 @@
             <div class="gaps-1x"></div>
             <h6 class="font-bold">Pay {{ethMinimum}}ETH to the following Address</h6>
             <div class="copy-wrap mgb-0-5x">
-              <span class="copy-feedback"></span>
+              <span class="copy-feedback"> Copied to clipboard</span>
               <em class="fab fa-ethereum"></em>
               <input
                 type="text"
@@ -358,6 +352,7 @@
               <button
                 class="copy-trigger copy-clipboard"
                 :data-clipboard-text="preSaleAddress"
+                @click="copyData"
               >
                 <em class="ti ti-files"></em>
               </button>
@@ -372,7 +367,7 @@
               </label>
             </div>
             <a :href="'https://metamask.app.link/send/'+this.preSaleAddress"
-            target="blank"
+            target="_blank"
               class="btn btn-primary"
               data-dismiss="modal"
               data-toggle="modal"
@@ -415,7 +410,10 @@ export default {
       name: "WIFI",
       wifiRate: 1200,
       ethMinimum: 0.42,
-      preSaleAddress: '0xbb2Ffe23258d5431a531e15d435C5497a77a91bb'
+      preSaleAddress: '0xbb2Ffe23258d5431a531e15d435C5497a77a91bb',
+      telegram: 'https://t.me/winfinanceofficial',
+      twitter:'',
+      github:''
     };
   },
   computed: {
@@ -435,6 +433,12 @@ export default {
         parseInt(this.wifiAmount)
       );
     },
+  },
+  methods: {
+  copyData() {
+    //btw writeText() returns a promise so you could utilize that somehow if you want
+    navigator.clipboard.writeText(this.preSaleAddress)
   }
+}
 };
 </script>

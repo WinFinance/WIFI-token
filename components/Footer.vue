@@ -15,7 +15,7 @@
             <div
               class="d-flex justify-content-between justify-content-md-end align-items-center guttar-25px pdt-0-5x pdb-0-5x"
             >
-              <div class="copyright-text">&copy; 2020 WinFinance.</div>
+              <div class="copyright-text" >&copy; 2020 WinFinance.</div>
               <div class="lang-switch relative">
                 <a href="#" class="lang-switch-btn toggle-tigger"
                   >En <em class="ti ti-angle-up"></em

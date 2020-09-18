@@ -52,7 +52,7 @@
             </li>
             <li>
               <a href="#referral">
-                <em class="ikon ikon-user"></em> Referrals
+                <em class="ikon ikon-user"></em> Referral
               </a>
             </li>
             <li>

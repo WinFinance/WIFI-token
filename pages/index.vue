@@ -7,11 +7,11 @@
             <div class="content-area card">
               <div class="card-innr">
                 <div class="card-head">
-                  <span class="card-sub-title text-primary font-mid">Buy WIFI Token</span>
+                  <span class="card-sub-title text-primary font-mid">Buy {{name}} Token</span>
                   <!-- <h4 class="card-title">Amount of ETH to contribute</h4> -->
                 </div>
                 <div class="card-text">
-                  <p>Input the ETH amount you want to contribute and measure the amount of the token you get. The calculator helps to convert the appropriate currency into WIFI tokens.</p>
+                  <p>Input the ETH amount you want to contribute and measure the amount of the token you get. The calculator helps to convert the appropriate currency into {{name}} tokens.</p>
                 </div>
                 <div class="token-contribute">
                   <div class="token-calc">
@@ -33,7 +33,7 @@
                       <div class="token-eq-sign">=</div>
                       <div class="token-received-amount">
                         <h5 class="token-amount">{{wifiAmount}}</h5>
-                        <div class="token-symbol">WIFI</div>
+                        <div class="token-symbol">{{name}}</div>
                       </div>
                     </div>
                   </div>
@@ -65,7 +65,7 @@
                       </div>
                       <div class="col-md-4">
                         <div class="token-total">
-                          <span class="token-overview-title font-bold">Total WIFI</span>
+                          <span class="token-overview-title font-bold">Total {{name}}</span>
                           <span
                             class="token-overview-value token-total-amount text-primary"
                           >{{totalWifi}}</span>
@@ -94,9 +94,9 @@
                   <div class="note note-plane note-light note-md font-italic">
                     <em class="fas fa-info-circle"></em>
                     <p>
-                      {{name}}Tokens will appear in your account after payment is successfully made and approved by our team.
+                      {{name}} Tokens will appear in your account after payment is successfully made and approved by our team.
                       <br class="d-none d-lg-block" />
-                      Please note that, {{name}} tokens will be distributed at the end of the ICO Token Sales.
+                      Please note that, {{name}} tokens will be distributed at the end of the {{fullName}} ICO Token Sales.
                     </p>
                   </div>
                 </div>
@@ -109,7 +109,7 @@
                 </div>
                 <div class="card-text">
                   <p>
-                    To become a part of WInfinance project, you can find all
+                    To become a part of {{fullName}} project, you can find all
                     details of ICO.
                     <br class="d-none d-sm-block" />You can contribute and
                     <a href="#">buy {{name}} tokens</a>.
@@ -144,7 +144,7 @@
                           <span>150 ETH</span>
                         </h5>
                         <span>Min purchase - 0.42 ETH</span>
-                        <span>Token Distribute - 150,000</span>
+                        <span>Tokens to be Distributed - 150,000</span>
                       </div>
                     </div>
                     <div class="col-xl-3 col-md-3 align-self-center text-xl-right">
@@ -172,7 +172,7 @@
                           <span>250 ETH</span>
                         </h5>
                         <span>Min purchase - 0.35 ETH</span>
-                        <span>Token Distribute - 250,000</span>
+                        <span>Tokens to be Distributed - 250,000</span>
                       </div>
                     </div>
                   </div>
@@ -189,7 +189,7 @@
                 </div>
                 <div class="card-text">
                   <p>
-                    Each member will have a unique {{name}} referral link to share with
+                    Each holder will have a unique {{name}} referral link to share with
                     friends and family and receive a
                     <strong>bonus - 20% of the value of their contribution</strong>
                     . COntributors who sign-up with this link, will be added to your
@@ -253,7 +253,7 @@
                 <div class="token-balance">
                   <div class="token-balance-text">
                     <span class="lead">
-                      Verified Token Contract
+                      Verified Smart Contract
                     </span>
                   </div>
                 </div>
@@ -269,7 +269,7 @@
                 </div>
                 <div class="token-rate-wrap row">
                   <div class="token-rate col-md-6 col-lg-12">
-                    <span class="card-sub-title">Winfinance Token Price</span>
+                    <span class="card-sub-title">{{fullName}} Token Price</span>
                     <h4 class="font-mid text-dark">
                       1 ETH =
                       <span>1,200 {{name}}</span>
@@ -339,67 +339,61 @@
             <h4 class="popup-title">Payment Address for Deposit</h4>
             <p>
               Please make deposit amount of
-              <strong>1.0 ETH</strong> to our
+              <strong>{{ethMinimum}} ETH</strong> to our
               address and receive
-              <strong>18,750 TWZ</strong> tokens including
-              <strong>bonus 1,540 TWZ</strong> once we recevied payment.
+              <strong>{{totalWifi}} {{name}}</strong> tokens including
+              <strong>bonus {{amountBonus}} {{name}}</strong> once we receive payment.
             </p>
             <div class="gaps-1x"></div>
-            <h6 class="font-bold">Payment to the following Address</h6>
+            <h6 class="font-bold">Pay {{ethMinimum}}ETH to the following Address</h6>
             <div class="copy-wrap mgb-0-5x">
               <span class="copy-feedback"></span>
               <em class="fab fa-ethereum"></em>
               <input
                 type="text"
                 class="copy-address"
-                value="0x4156d3342d5c385a87d264f90653733592000581"
+                :value="preSaleAddress"
                 disabled
               />
               <button
                 class="copy-trigger copy-clipboard"
-                data-clipboard-text="0x4156d3342d5c385a87d264f90653733592000581"
+                :data-clipboard-text="preSaleAddress"
               >
                 <em class="ti ti-files"></em>
               </button>
             </div>
-            <!-- .copy-wrap -->
-            <ul class="pay-info-list row">
-              <li class="col-sm-6">
-                <span>SET GAS LIMIT:</span> 120 000
-              </li>
-              <li class="col-sm-6">
-                <span>SET GAS PRICE:</span> 95 Gwei
-              </li>
-            </ul>
+        
             <!-- .pay-info-list -->
             <div class="pdb-2-5x pdt-1-5x">
               <input type="checkbox" class="input-checkbox input-checkbox-md" id="agree-term" />
               <label for="agree-term">
                 I hereby agree to the
-                <strong>token purchase aggrement &amp; token sale term</strong>.
+                <strong>token purchase agreement &amp; token sale term</strong>.
               </label>
             </div>
-            <button
+            <a :href="'https://metamask.app.link/send/'+this.preSaleAddress"
+            target="blank"
               class="btn btn-primary"
               data-dismiss="modal"
               data-toggle="modal"
               data-target="#pay-confirm"
+              @click="openMetamask"
             >
               Buy Tokens Now
               <em class="ti ti-arrow-right mgl-4-5x"></em>
-            </button>
+            </a>
             <div class="gaps-3x"></div>
             <div class="note note-plane note-light mgb-1x">
               <em class="fas fa-info-circle"></em>
               <p>
-                Do not make payment through exchange (Kraken, Bitfinex). You can
-                use MayEtherWallet, MetaMask, Mist wallets etc.
+                Do not make payment through exchange (Kraken, Bitfinex) or any Smart Contract Address. We recommend you
+                use MyEtherWallet, MetaMask, Mist wallets etc.
               </p>
             </div>
             <div class="note note-plane note-danger">
               <em class="fas fa-info-circle"></em>
               <p>
-                In case you send a different amount, number of TWZ tokens will
+                In case you send a different amount, number of {{name}} tokens will
                 update accordingly.
               </p>
             </div>
@@ -417,9 +411,11 @@
 export default {
   data() {
     return {
+      fullName: "Winfinance",
       name: "WIFI",
       wifiRate: 1200,
-      ethMinimum: 0,
+      ethMinimum: 0.42,
+      preSaleAddress: '0xbb2Ffe23258d5431a531e15d435C5497a77a91bb'
     };
   },
   computed: {
@@ -439,6 +435,6 @@ export default {
         parseInt(this.wifiAmount)
       );
     },
-  },
+  }
 };
 </script>

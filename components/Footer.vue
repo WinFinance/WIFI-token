@@ -4,10 +4,10 @@
         <div class="row align-items-center justify-content-center">
           <div class="col-md-8">
             <ul class="footer-links">
-              <li><a href="#">Whitepaper</a></li>
-              <li><a href="faq-page.html">FAQs</a></li>
-              <li><a href="regular-page.html">Privacy Policy</a></li>
-              <li><a href="regular-page.html">Terms of Condition</a></li>
+              <li><a href="#">Community</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Condition</a></li>
             </ul>
           </div>
           <!-- .col -->
@@ -15,7 +15,7 @@
             <div
               class="d-flex justify-content-between justify-content-md-end align-items-center guttar-25px pdt-0-5x pdb-0-5x"
             >
-              <div class="copyright-text">&copy; 2018 TokenWiz.</div>
+              <div class="copyright-text">&copy; 2020 WinFinance.</div>
               <div class="lang-switch relative">
                 <a href="#" class="lang-switch-btn toggle-tigger"
                   >En <em class="ti ti-angle-up"></em

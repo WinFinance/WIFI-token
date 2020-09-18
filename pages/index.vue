@@ -7,11 +7,11 @@
             <div class="content-area card">
               <div class="card-innr">
                 <div class="card-head">
-                  <span class="card-sub-title text-primary font-mid">Buy Token</span>
-                  <h4 class="card-title">Amount of contribute</h4>
+                  <span class="card-sub-title text-primary font-mid">Buy WIFI Token</span>
+                  <!-- <h4 class="card-title">Amount of ETH to contribute</h4> -->
                 </div>
                 <div class="card-text">
-                  <p>Enter your amount, you would like to contribute and calculate the amount of token you will received. The calculator helps to convert required currency to tokens.</p>
+                  <p>Input the ETH amount you want to contribute and measure the amount of the token you get. The calculator helps to convert the appropriate currency into WIFI tokens.</p>
                 </div>
                 <div class="token-contribute">
                   <div class="token-calc">
@@ -19,37 +19,33 @@
                       <input
                         id="token-base-amount"
                         class="input-bordered input-with-hint"
-                        type="text"
+                        type="number"
+                        min="0.41"
+                        max="20"
                         value="1"
+                        v-model="ethMinimum"
                       />
                       <div class="token-pay-currency">
-                        <a href="#" class="link ucap link-light toggle-tigger toggle-caret">ETH</a>
-                        <div class="toggle-class dropdown-content">
-                          <ul class="dropdown-list">
-                            <li>
-                              <a href="#">BTC</a>
-                            </li>
-                            <li>
-                              <a href="#">LTC</a>
-                            </li>
-                            <li>
-                              <a href="#">USD</a>
-                            </li>
-                          </ul>
-                        </div>
+                        <a href="#" class="link ucap link-light toggle-tigger">ETH</a>
                       </div>
                     </div>
                     <div class="token-received">
                       <div class="token-eq-sign">=</div>
                       <div class="token-received-amount">
-                        <h5 class="token-amount">123,500.84</h5>
-                        <div class="token-symbol">TWZ</div>
+                        <h5 class="token-amount">{{wifiAmount}}</h5>
+                        <div class="token-symbol">WIFI</div>
                       </div>
                     </div>
                   </div>
                   <div class="token-calc-note note note-plane">
-                    <em class="fas fa-times-circle text-danger"></em>
-                    <span class="note-text text-light">0.35 ETH minimum contribution require.</span>
+                    <template v-if="ethMinimum < 0.42">
+                      <em class="fas fa-times-circle text-danger"></em>
+                      <span class="note-text text-light">0.42 ETH minimum contribution require.</span>
+                    </template>
+                    <template v-if="ethMinimum > 20">
+                      <em class="fas fa-times-circle text-danger"></em>
+                      <span class="note-text text-light">20 ETH maximum contribution Allowed.</span>
+                    </template>
                   </div>
                 </div>
                 <div class="token-overview-wrap">
@@ -58,27 +54,27 @@
                       <div class="col-md-4 col-sm-6">
                         <div class="token-bonus token-bonus-sale">
                           <span class="token-overview-title">+ 20% Sale Bonus</span>
-                          <span class="token-overview-value bonus-on-sale">15,000.00</span>
+                          <span class="token-overview-value bonus-on-sale">{{saleBonus}}</span>
                         </div>
                       </div>
                       <div class="col-md-4 col-sm-6">
                         <div class="token-bonus token-bonus-amount">
                           <span class="token-overview-title">+ 30% Amount Bonus</span>
-                          <span class="token-overview-value bonus-on-amount">5,000.00</span>
+                          <span class="token-overview-value bonus-on-amount">{{amountBonus}}</span>
                         </div>
                       </div>
                       <div class="col-md-4">
                         <div class="token-total">
-                          <span class="token-overview-title font-bold">Total TWZ</span>
+                          <span class="token-overview-title font-bold">Total WIFI</span>
                           <span
                             class="token-overview-value token-total-amount text-primary"
-                          >1,823,500.84</span>
+                          >{{totalWifi}}</span>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="note note-plane note-danger note-sm pdt-1x pl-0">
-                    <p>Your Contribution will be calculated based on exchange rate at the moment your transaction is confirm.</p>
+                    <p>Your contribution will be calculated at the moment your transaction is confirmed, based on the exchange rate.</p>
                   </div>
                 </div>
                 <div class="pay-buttons pt-0">
@@ -89,7 +85,7 @@
                       data-target="#get-pay-address"
                       class="btn btn-light-alt btn-between w-100"
                     >
-                      Get Address for Payment
+                      Reveal Address for Payment
                       <em class="ti ti-wallet"></em>
                     </a>
                   </div>
@@ -98,8 +94,9 @@
                   <div class="note note-plane note-light note-md font-italic">
                     <em class="fas fa-info-circle"></em>
                     <p>
-                      Tokens will appear in your account after payment successfully made and approved by our team.
-                      <br class="d-none d-lg-block" />Please note that, TWZ tokens will distributed end of ICO Token Sales.
+                      {{name}}Tokens will appear in your account after payment is successfully made and approved by our team.
+                      <br class="d-none d-lg-block" />
+                      Please note that, {{name}} tokens will be distributed at the end of the ICO Token Sales.
                     </p>
                   </div>
                 </div>
@@ -112,15 +109,17 @@
                 </div>
                 <div class="card-text">
                   <p>
-                    To become a part of TokenWiz project, you can found all
+                    To become a part of WInfinance project, you can find all
                     details of ICO.
                     <br class="d-none d-sm-block" />You can contribute and
-                    <a href="#">buy TWZ tokens</a>.
+                    <a href="#">buy {{name}} tokens</a>.
                   </p>
                   <p>
                     You can get a quick response and chat with our team in
                     Telegram:
-                    <a href="#">htts://t.me/tokenwiz</a>
+                    <a
+                      href="#"
+                    >https://t.me/winfinance</a>
                   </p>
                 </div>
                 <div class="gaps-3x"></div>
@@ -132,20 +131,20 @@
                     <div class="col-xl-5 col-md-5 col-lg-6">
                       <div class="pdb-1x">
                         <h5 class="schedule-title">
-                          <span>Pre-Sale ICO</span>
-                          <span class="badge badge-success ucap badge-xs">Running</span>
+                          <span>Private Sale</span>
+                          <span class="badge badge-disabled ucap badge-xs">Upcoming</span>
                         </h5>
-                        <span>Start at Dec 02, 2018 - 11:00 AM</span>
-                        <span>End at Jan 15, 2019 - 11:00 AM</span>
+                        <span>Start at Sept 22, 2020 - 11:00 AM</span>
+                        <span>End at Oct 15, 2020 - 11:59 PM</span>
                       </div>
                     </div>
                     <div class="col-xl-4 col-md col-lg-6">
                       <div class="pdb-1x">
                         <h5 class="schedule-title">
-                          <span>0.00080 ETH</span>
+                          <span>150 ETH</span>
                         </h5>
-                        <span>Min purchase - 0.35 ETH</span>
-                        <span>Token Distribute - 250,000</span>
+                        <span>Min purchase - 0.42 ETH</span>
+                        <span>Token Distribute - 150,000</span>
                       </div>
                     </div>
                     <div class="col-xl-3 col-md-3 align-self-center text-xl-right">
@@ -160,17 +159,17 @@
                     <div class="col-xl-5 col-md-5 col-lg-6">
                       <div class="pdb-1x">
                         <h5 class="schedule-title">
-                          <span>Main ICO Sale</span>
-                          <span class="badge badge-disabled ucap badge-xs">Upcomming</span>
+                          <span>Crowd Sale</span>
+                          <span class="badge badge-disabled ucap badge-xs">Upcoming</span>
                         </h5>
-                        <span>Start at Dec 02, 2018 - 11:00 AM</span>
-                        <span>End at Jan 15, 2019 - 11:00 AM</span>
+                        <span>Start at Dec 02, 2020 - 11:00 AM</span>
+                        <span>End at Jan 15, 2021 - 11:00 AM</span>
                       </div>
                     </div>
                     <div class="col-xl-4 col-md col-lg-6">
                       <div class="pdb-1x">
                         <h5 class="schedule-title">
-                          <span>0.00080 ETH</span>
+                          <span>250 ETH</span>
                         </h5>
                         <span>Min purchase - 0.35 ETH</span>
                         <span>Token Distribute - 250,000</span>
@@ -190,11 +189,12 @@
                 </div>
                 <div class="card-text">
                   <p>
-                    Each member have a unique TWZ referral link to share with
+                    Each member will have a unique {{name}} referral link to share with
                     friends and family and receive a
-                    <strong>bonus - 15% of the value of their contribution</strong>. If any one sign-up with this link, will be added to your
-                    referral program. The referral link may be used during a
-                    token sales running.
+                    <strong>bonus - 20% of the value of their contribution</strong>
+                    . COntributors who sign-up with this link, will be added to your
+                    referral program. The referral link may be used while {{name}}
+                    token sale is running.
                   </p>
                 </div>
                 <div class="referral-form">
@@ -208,12 +208,12 @@
                     <input
                       type="text"
                       class="copy-address"
-                      value="https://demo.themenio.com/tokenwiz?ref=7d264f90653733592"
+                      value="https://winfinance.io/contrib?ref=7d264f90653733592"
                       disabled
                     />
                     <button
                       class="copy-trigger copy-clipboard"
-                      data-clipboard-text="https://demo.themenio.com/tokenwiz?ref=7d264f90653733592"
+                      data-clipboard-text="https://winfinance.io/contrib?ref=7d264f90653733592"
                     >
                       <em class="ti ti-files"></em>
                     </button>
@@ -252,29 +252,13 @@
               <div class="card-innr">
                 <div class="token-balance">
                   <div class="token-balance-text">
-                    <h6 class="card-sub-title">Tokens Balance</h6>
                     <span class="lead">
-                      120,000,000
-                      <span>TWZ</span>
+                      Verified Token Contract
                     </span>
                   </div>
                 </div>
                 <div class="token-balance token-balance-s2">
-                  <h6 class="card-sub-title">Your Contribution</h6>
-                  <ul class="token-balance-list">
-                    <li class="token-balance-sub">
-                      <span class="lead">2.646</span>
-                      <span class="sub">ETH</span>
-                    </li>
-                    <li class="token-balance-sub">
-                      <span class="lead">1.265</span>
-                      <span class="sub">BTC</span>
-                    </li>
-                    <li class="token-balance-sub">
-                      <span class="lead">6.506</span>
-                      <span class="sub">LTC</span>
-                    </li>
-                  </ul>
+                  <a href="https://etherscan.io/address/0x2De0a1f9EbeBBcb681Eda3b52E02B1A30AF3Fb93#code" class="card-sub-title">0x2De0a1f9EbeBBcb681Eda3b52E02B1A30AF3Fb93</a>
                 </div>
               </div>
             </div>
@@ -285,15 +269,11 @@
                 </div>
                 <div class="token-rate-wrap row">
                   <div class="token-rate col-md-6 col-lg-12">
-                    <span class="card-sub-title">TWZ Token Price</span>
+                    <span class="card-sub-title">Winfinance Token Price</span>
                     <h4 class="font-mid text-dark">
                       1 ETH =
-                      <span>12500 TWZ</span>
+                      <span>1,200 {{name}}</span>
                     </h4>
-                  </div>
-                  <div class="token-rate col-md-6 col-lg-12">
-                    <span class="card-sub-title">Exchange Rate</span>
-                    <span>1 ETH = 196.98 USD = 0.032 BTC</span>
                   </div>
                 </div>
                 <div class="token-bonus-current">
@@ -303,37 +283,39 @@
                   </div>
                   <div class="token-bonus-date">
                     End at
-                    <br />10 Jan, 2019
+                    <br />10 Jan, 2020
                   </div>
                 </div>
               </div>
               <div class="sap"></div>
               <div class="card-innr">
                 <div class="card-head">
-                  <h5 class="card-title card-title-sm">Token Sales Progress</h5>
+                  <h5 class="card-title card-title-sm">Token Supply</h5>
                 </div>
-                <ul class="progress-info">
-                  <li>
-                    <span>Raised</span> 2,758 TWZ
-                  </li>
-                  <li class="text-right">
-                    <span>TOTAL</span> 1,500,000 TWZ
-                  </li>
-                </ul>
-                <div class="progress-bar">
-                  <div class="progress-hcap" data-percent="83">
-                    <div>
-                      Hard cap
-                      <span>1,400,000</span>
-                    </div>
+                <div class="token-rate-wrap row">
+                  <div class="token-rate col-md-6 col-lg-12">
+                    <span class="card-sub-title">Total Token Supply</span>
+                    <h4 class="font-mid text-dark">
+                      1 ETH =
+                      <span>1,000,000 {{name}}</span>
+                    </h4>
                   </div>
-                  <div class="progress-scap" data-percent="24">
-                    <div>
-                      Soft cap
-                      <span>40,000</span>
-                    </div>
+                </div> <div class="token-rate-wrap row">
+                  <div class="token-rate col-md-6 col-lg-12">
+                    <span class="card-sub-title">Available for Private Sale</span>
+                    <h4 class="font-mid text-dark">
+                      150,000 {{name}}
+                      <span>1 ETH = 1,200 {{name}}</span>
+                    </h4>
                   </div>
-                  <div class="progress-percent" data-percent="28"></div>
+                </div> <div class="token-rate-wrap row">
+                  <div class="token-rate col-md-6 col-lg-12">
+                    <span class="card-sub-title">Available for Crowdsale</span>
+                    <h4 class="font-mid text-dark">
+                      250,000 {{name}}
+                      <span>1 ETH = 1,000 {{name}}</span>
+                    </h4>
+                  </div>
                 </div>
                 <span class="card-sub-title mgb-0-5x">Sales END IN</span>
                 <div class="countdown-clock" data-date="2019/02/05"></div>
@@ -350,31 +332,30 @@
     <div class="modal fade" id="get-pay-address" tabindex="-1">
       <div class="modal-dialog modal-dialog-md modal-dialog-centered">
         <div class="modal-content">
-          <a
-            href="#"
-            class="modal-close"
-            data-dismiss="modal"
-            aria-label="Close"
-            ><em class="ti ti-close"></em
-          ></a>
+          <a href="#" class="modal-close" data-dismiss="modal" aria-label="Close">
+            <em class="ti ti-close"></em>
+          </a>
           <div class="popup-body">
             <h4 class="popup-title">Payment Address for Deposit</h4>
             <p>
-              Please make deposit amount of <strong>1.0 ETH</strong> to our
-              address and receive <strong>18,750 TWZ</strong> tokens including
+              Please make deposit amount of
+              <strong>1.0 ETH</strong> to our
+              address and receive
+              <strong>18,750 TWZ</strong> tokens including
               <strong>bonus 1,540 TWZ</strong> once we recevied payment.
             </p>
             <div class="gaps-1x"></div>
             <h6 class="font-bold">Payment to the following Address</h6>
             <div class="copy-wrap mgb-0-5x">
-              <span class="copy-feedback"></span
-              ><em class="fab fa-ethereum"></em
-              ><input
+              <span class="copy-feedback"></span>
+              <em class="fab fa-ethereum"></em>
+              <input
                 type="text"
                 class="copy-address"
                 value="0x4156d3342d5c385a87d264f90653733592000581"
-                disabled=""
-              /><button
+                disabled
+              />
+              <button
                 class="copy-trigger copy-clipboard"
                 data-clipboard-text="0x4156d3342d5c385a87d264f90653733592000581"
               >
@@ -383,20 +364,20 @@
             </div>
             <!-- .copy-wrap -->
             <ul class="pay-info-list row">
-              <li class="col-sm-6"><span>SET GAS LIMIT:</span> 120 000</li>
-              <li class="col-sm-6"><span>SET GAS PRICE:</span> 95 Gwei</li>
+              <li class="col-sm-6">
+                <span>SET GAS LIMIT:</span> 120 000
+              </li>
+              <li class="col-sm-6">
+                <span>SET GAS PRICE:</span> 95 Gwei
+              </li>
             </ul>
             <!-- .pay-info-list -->
             <div class="pdb-2-5x pdt-1-5x">
-              <input
-                type="checkbox"
-                class="input-checkbox input-checkbox-md"
-                id="agree-term"
-              /><label for="agree-term"
-                >I hereby agree to the
-                <strong>token purchase aggrement &amp; token sale term</strong
-                >.</label
-              >
+              <input type="checkbox" class="input-checkbox input-checkbox-md" id="agree-term" />
+              <label for="agree-term">
+                I hereby agree to the
+                <strong>token purchase aggrement &amp; token sale term</strong>.
+              </label>
             </div>
             <button
               class="btn btn-primary"
@@ -404,7 +385,8 @@
               data-toggle="modal"
               data-target="#pay-confirm"
             >
-              Buy Tokens Now <em class="ti ti-arrow-right mgl-4-5x"></em>
+              Buy Tokens Now
+              <em class="ti ti-arrow-right mgl-4-5x"></em>
             </button>
             <div class="gaps-3x"></div>
             <div class="note note-plane note-light mgb-1x">
@@ -432,5 +414,31 @@
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      name: "WIFI",
+      wifiRate: 1200,
+      ethMinimum: 0,
+    };
+  },
+  computed: {
+    wifiAmount() {
+      return (this.ethMinimum * this.wifiRate).toFixed(2);
+    },
+    saleBonus() {
+      return (this.wifiAmount * 0.2).toFixed(2);
+    },
+    amountBonus() {
+      return (this.wifiAmount * 0.3).toFixed(2);
+    },
+    totalWifi() {
+      return (
+        parseInt(this.saleBonus) +
+        parseInt(this.amountBonus) +
+        parseInt(this.wifiAmount)
+      );
+    },
+  },
+};
 </script>

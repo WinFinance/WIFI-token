@@ -1,24 +1,13 @@
 export default {
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'winfinance',
-    bodyAttrs: {
-      class: 'page-user'
-    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image', href: '/favicon.png' },
-      { rel: 'stylesheet', href: '/assets/css/vendor.bundle49f7.css'},
-      { rel: 'stylesheet', href:'/assets/css/style49f7.css',  id:'layoutstyle'}
-    ],
-    script: [
-      { src: '/assets/js/jquery.bundle49f7.js', body: true},
-      { src: '/assets/js/script49f7.js', body: true}
-
+      { rel: 'icon', type: 'image', href: '/favicon.png' }
     ]
   },
   generate: {

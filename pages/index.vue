@@ -38,7 +38,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-12 col-lg-8">
                     <!-- section title -->
-                    <div class="section-title text-center">
+                    <div class="section-title text-center mt-2">
                         <h2>How {{name}} Works</h2>
                         <p>{{name}} offers solution which aggregates cryptocurrency exchanges, non-bank liquidity providers, Forex brokers, cryptocurrency brokers, OTC orders of institutional clients, hedge funds and thousands of client-broker orders. This enables us to create the deepest liquidity pool in the industry.</p>
                     </div>

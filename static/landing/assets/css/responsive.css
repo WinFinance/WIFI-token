@@ -234,7 +234,7 @@
     }
 
     .header-menu #menu-button {
-        color: #f77ade;
+        color: #253992;
         font-size: 28px;
         display: inline-block;
         cursor: pointer;
@@ -284,12 +284,12 @@
 
     .header-menu #menu-button.menu-opened:before,
     .header-menu .submenu-button.submenu-opened:before {
-        border-top-color: #f77ade;
+        border-top-color: #253992;
     }
 
     .header-menu>ul>li:not(.active):hover>a,
     .header-menu>ul>li:not(.active)>a:hover {
-        color: #f77ade;
+        color: #253992;
     }
 
     .header-menu>ul>li>ul {
@@ -664,9 +664,9 @@
     }
 
     .download-app-inner .btn {
-        border-color: #f77ade;
+        border-color: #253992;
         color: #fff;
-        background: #f77ade;
+        background: #253992;
         margin-bottom: 4px;
         font-size: 14px;
         font-weight: 600;
@@ -778,7 +778,7 @@
     }
 
     .main-header.sticky .blog-menu.header-menu i {
-        color: #f77ade;
+        color: #253992;
     }
 
     .banner-inner-area.banner-area1.banner2:before {

@@ -1,112 +1,115 @@
 <template>
-      <footer class="nk-footer bg-theme-alt section-connect">
-        <div class="section section-m pb-0 tc-light ov-h">
-          <div class="container py-4">
-            <!-- Block @s -->
-            <div class="nk-block pb-lg-5">
-              <div class="row justify-content-center text-center">
-                <div class="col-lg-6 col-md-9">
-                  <div class="wide-auto-sm section-head section-head-sm pdb-r">
-                    <h4
-                      class="title title-md animated"
-                      data-animate="fadeInUp"
-                      data-delay=".1"
-                    >
-                      Don't miss out, Stay updated
-                    </h4>
-                  </div>
-                  <form
-                    action="form/subscribe.php"
-                    class="nk-form-submit"
-                    method="post"
-                  >
-                    <div
-                      class="field-inline field-inline-round field-inline-s2-sm bg-theme-dark-alt shadow-soft animated"
-                      data-animate="fadeInUp"
-                      data-delay=".2"
-                    >
-                      <div class="field-wrap">
-                        <input
-                          class="input-solid input-solid-md required email"
-                          type="text"
-                          name="contact-email"
-                          placeholder="Enter your email"
-                        /><input
-                          type="text"
-                          class="d-none"
-                          name="form-anti-honeypot"
-                          value=""
-                        />
-                      </div>
-                      <div class="submit-wrap">
-                        <button class="btn btn-md btn-round btn-grad h-100">
-                          Subscribe
-                        </button>
-                      </div>
-                    </div>
-                    <div class="form-results"></div>
-                  </form>
-                </div>
-              </div>
-            </div>
-            <!-- .block @e -->
-          </div>
-          <div class="nk-ovm shape-contain shape-center-top shape-p"></div>
+      <footer class="footer">
+        <div class="footerbg">
+        <img src="/landing/assets/img/footer-bg.png" alt="">
         </div>
-        <div class="section section-footer section-s tc-light bg-transparent">
-          <div class="container">
-            <!-- Block @s -->
-            <div class="nk-block block-footer">
-              <div class="row">
-                <div class="col">
-                  <div class="wgs wgs-text text-center mb-3">
-                    <ul class="social pdb-m justify-content-center">
-                      <li>
-                        <a href="#"
-                          ><em class="social-icon fab fa-facebook-f"></em
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><em class="social-icon fab fa-twitter"></em
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><em class="social-icon fab fa-youtube"></em
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><em class="social-icon fab fa-github"></em
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><em class="social-icon fab fa-bitcoin"></em
-                        ></a>
-                      </li>
-                      <li>
-                        <a href="#"
-                          ><em class="social-icon fab fa-medium-m"></em
-                        ></a>
-                      </li>
-                    </ul>
-                    <div class="copyright-text copyright-text-s3 pdt-m">
-                      <p>
-                        <span class="d-sm-block"
-                          >Copyright &copy; 2018, ICO Crypto. Template Made By
-                          <a href="./">Softnio</a> &amp; Handcrafted by iO. </span
-                        >All trademarks and copyrights belong to their
-                        respective owners.
-                      </p>
+        <div class="footer-top pt-120 pb-110">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <!-- footer widget -->
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img src="/landing/assets/img/logo.png" alt=""></a>
+                            </div>
+                            <p>Lorem ipsum dolor sit ame consy ect etur adipisc de elit. Quisque act raqum nunc no dolor sit de
+                                amet.</p>
+                            <!-- footer social area -->
+                            <div class="footer-social-area">
+                                <ul class="social-icons social-icons-light nav">
+                                    <li><a href="#" target="_blank"><i class="fa fa-facebook-f"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                    <li><a href="#" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- End of footer social area -->
+                        </div>
+                        <!--End of footer widget -->
                     </div>
-                  </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer-widget">
+                            <!-- widget header -->
+                            <div class="widget-header">
+                                <h5>Our Address</h5>
+                            </div>
+                            <!-- widget header -->
+                            <div class="widget-body">
+                                <ul class="address-list">
+                                    <li>
+                                        <span><i class="fa  fa-phone-square"></i></span>
+                                        888 999 0000
+                                    </li>
+                                    <li>
+                                        <span><i class="fa  fa-envelope"></i></span>
+                                        needhelp@jironis.com
+                                    </li>
+                                    <li>
+                                        <span><i class="fa  fa-map"></i></span>
+                                        855 road, broklyn street,
+                                        new york 600
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer-widget">
+                            <!-- widget header -->
+                            <div class="widget-header">
+                                <h5>Extra Links</h5>
+                            </div>
+                            <!-- widget header -->
+                        </div>
+
+                        <div class="widget-body">
+                            <div class="extra-link">
+                                <div class="link-left">
+                                    <ul>
+                                        <li><a href="#">About</a></li>
+                                        <li><a href="#">Our Team</a></li>
+                                        <li><a href="#">Features</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">How It Works</a></li>
+                                    </ul>
+                                </div>
+                                <div class="link-right">
+                                    <ul>
+                                        <li><a href="#">Help</a></li>
+                                        <li><a href="#">Support</a></li>
+                                        <li><a href="#">Clients</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer-widget">
+                            <div class="widget-body">
+                                <div class="twetter-post-inner">
+                                    <div class="footer-post-details">
+                                        @Layerdrops Take your web design to new heights with jironix. <br><a href="http://yhdj58.tp8/JK">http://yhdj58.tp8/JK</a>
+                                    </div>
+                                    <div class="twetter-post">
+                                        <span><i class="fa fa-twitter"></i></span>
+                                        Jironis - Nov 23, 2018
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-            <!-- .block @e -->
-          </div>
         </div>
-      </footer>
+        <div class="footer-bottom">
+            <div class="footer-text text-center">
+                <p>© copyright 2019 by Layerdrops.com</p>       
+            </div>
+        </div>
+        
+    </footer>
 </template>

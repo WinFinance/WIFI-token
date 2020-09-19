@@ -5,7 +5,7 @@
         <div class="banner-inner-area banner-area1">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-md-8 col-lg-6 col-xl-5">
+                    <div class="col-12">
                         <!-- banner text -->
                         <div class="banner-text-inner">
                             <div class="banner-shape-wrap">
@@ -20,19 +20,11 @@
                                 </div>
                             </div>
 
-                            <h1>Jironis is for your internet app business</h1>
-                            <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit lorem ipsum anim id est laborum perspiciatis unde.</p>
-                            <a href="#" class="btn">Download App</a>
-                            <a href="#" class="btn">Discover More</a>
+                            <h1>Cryptocurrency derivatives (CFD) and deliverable (cash) liquidity</h1>
+                            <p>{{name}}, is a pooling mechanics arbitration system that rewards both buyer and liquidity providers, thus alleviating issues of impermanent loss.</p>
+                            <nuxt-link to="/presale" class="btn">Join Airdrop Now</nuxt-link>
                         </div>
                         <!-- banner text -->
-                    </div>
-                    <div class="col-lg-5 offset-lg-1 col-md-4 offse-xl-2">
-                        <!-- banner image-->
-                        <div class="banner-image">
-                            <img src="/landing/assets/img/banner/mockup.png" alt="">
-                        </div>
-                        <!--End of banner image-->
                     </div>
                 </div>
             </div>
@@ -47,86 +39,14 @@
                 <div class="col-md-12 col-lg-8">
                     <!-- section title -->
                     <div class="section-title text-center">
-                        <h2>App Advance Features</h2>
-                        <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit lorem ipsum anim id est laborum perspiciatis unde.</p>
+                        <h2>How {{name}} Works</h2>
+                        <p>{{name}} offers solution which aggregates cryptocurrency exchanges, non-bank liquidity providers, Forex brokers, cryptocurrency brokers, OTC orders of institutional clients, hedge funds and thousands of client-broker orders. This enables us to create the deepest liquidity pool in the industry.</p>
                     </div>
                     <!-- End of section title -->
                 </div>
             </div>
-            <div class="row justify-content-center">
-                <div class="col-xl-10 col-lg-12">
-                    <div class="feature-carousel owl-carousel">
-                        <!-- single feature inner -->
-                        <div class="single-feature-inner text-center">
-                            <div class="feature-icon"><img src="/landing/assets/img/icons/project-management.svg" class="svg" alt=""></div>
-                            <h5>New Artwork<br> Unveiled</h5>
-                            <p>There are many variations of passages of lorem Ipsum but majority have suffered.</p>
-                        </div>
-                        <!-- End of single feature inner -->
-
-                        <!-- single feature inner -->
-                        <div class="single-feature-inner text-center">
-                            <div class="feature-icon"><img src="/landing/assets/img/icons/solution.svg" class="svg" alt=""></div>
-                            <h5>Company Growth Strategy</h5>
-                            <p>There are many variations of passages of lorem Ipsum but majority have suffered.</p>
-                        </div>
-                        <!-- End of single feature inner -->
-
-                        <!-- single feature inner -->
-                        <div class="single-feature-inner text-center">
-                            <div class="feature-icon"><img src="/landing/assets/img/icons/planning.svg" class="svg" alt=""></div>
-                            <h5>Perfect Application Intergration</h5>
-                            <p>There are many variations of passages of lorem Ipsum but majority have suffered.</p>
-                        </div>
-                        <!-- End of single feature inner -->
-
-                        <!-- single feature inner -->
-                        <div class="single-feature-inner text-center">
-                            <div class="feature-icon"><img src="/landing/assets/img/icons/goal.svg" class="svg" alt=""></div>
-                            <h5>Creative App<br>Display</h5>
-                            <p>There are many variations of passages of lorem Ipsum but majority have suffered.</p>
-                        </div><!-- End of single feature inner -->
-                    </div><!--/.feature-carousel-->
-                </div><!--/.col-->
-            </div><!--/.row-->
         </div><!--/.container-->
     </section><!-- End of feature area -->
-
-    <!-- Counter up area -->
-    <section class="border-top pt-120 pb-80">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <!-- single counetr -->
-                    <div class="single-counter text-center">
-                        <span class="counter">4789</span>
-                        <p>Downloads</p>
-                    </div><!-- single counetr -->
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <!-- single counetr -->
-                    <div class="single-counter text-center">
-                        <span class="counter">6389</span>
-                        <p>Liks</p>
-                    </div><!-- single counetr -->
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <!-- single counetr -->
-                    <div class="single-counter text-center">
-                        <span class="counter">900</span>
-                        <p>5 Star Reating</p>
-                    </div><!-- single counetr -->
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <!-- single counetr -->
-                    <div class="single-counter text-center">
-                        <span class="counter">489</span>
-                        <p>Awards</p>
-                    </div><!-- single counetr -->
-                </div><!-- /.col -->
-            </div><!-- /.row -->
-        </div><!-- /.container -->
-    </section><!-- /.End of Counter up area -->
 
     <!-- interact user -->
     <section class="bg-2 pt-120 pb-120">
@@ -135,7 +55,7 @@
                 <div class="col-lg-7 col-sm-7">
                     <!-- user interact image -->
                     <div class="user-interact-image">
-                        <img src="/landing/assets/img/feature/user-interact.png"  alt="">
+                        <img src="/landing/assets/img/feature/defi.jpg"  alt="">
                     </div>
                     <!-- End of user interact image -->
                 </div>
@@ -145,10 +65,9 @@
                         <div class="interact-icon">
                             <img src="/landing/assets/img/icons/teamwork.svg" class="svg" alt="">
                         </div>
-                        <h2>Interact With Your Users On Every Single Platform</h2>
+                        <h2>Community driven Project</h2>
                         <p>
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form,
-                            by injected humour.
+                           The {{name}} team wanted to focus on incentivizing stakers to perform useful actions for the community by participating in a DAO. Between a transaction tax sent to the DAO fund, voting participation multiplier, and a referral program this is a truly community driven project
                         </p>
                         <a href="#" class="btn">Get Started</a>
                     </div>
@@ -169,20 +88,18 @@
                         <div class="interact-icon">
                             <img src="/landing/assets/img/icons/solution1.svg" class="svg" alt="">
                         </div>
-                        <h2>Interact With Your Users On Every Single Platform</h2>
+                        <h2>Secure Purchases</h2>
                         <p>
-                            There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                            alteration in some form,
-                            by injected humour.
+                            {{name}} solves the issue of Uniswap exit scamming by using standardized non-custodial presale smart contracts that lock liquidity.
                         </p>
-                        <a href="#" class="btn">Get Started</a>
+                        <a href="#" class="btn">See Presale</a>
                     </div>
                     <!--End of user ineract text -->
                 </div>
                 <div class="col-lg-7 col-sm-7">
                     <!-- user interact image -->
                     <div class="user-interact-image type2">
-                        <img src="/landing/assets/img/feature/user-interact2.png"  alt="">
+                        <img src="/landing/assets/img/feature/secure.jpg"  alt="">
                     </div>
                     <!-- End of user interact image -->
                 </div>
@@ -191,547 +108,6 @@
     </section>
     <!-- interact user -->
 
-    <!-- app video -->
-    <section class="app-video">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <!-- why bottle video -->
-                    <div class="theme-video-wrap">
-                        <a href="https://www.youtube.com/watch?v=SZEflIVnhH8" class="video-btn" data-popup="video"><i class="fa fa-play"></i></a>
-                    </div>
-                    <!-- end of why bottle video -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End of why bottol water -->
-    
-    <!-- app screen -->
-    <section class="pt-120 pb-115" id='app'>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-12 col-lg-8">
-                    <!-- section title -->
-                    <div class="section-title text-center">
-                        <h2>Jironis App Screens</h2>
-                        <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit lorem ipsum anim id est laborum perspiciatis unde.</p>
-                    </div>
-                    <!-- End of section title -->
-                </div>
-            </div>
-        </div>
-        <div class="app-scrin-inner">
-            <div class="app-carousel-inner">
-                <div class="app-carousel owl-carousel">
-                    <!-- slingle app image -->
-                    <div class="single-app-image">
-                        <img src="/landing/assets/img/feature/app-img.png" data-rjs="2" alt="">
-                    </div>
-                    <!-- slingle app image -->
-
-                    <!-- slingle app image -->
-                    <div class="single-app-image">
-                        <img src="/landing/assets/img/feature/app-img2.png" data-rjs="2" alt="">
-                    </div>
-                    <!-- slingle app image -->
-
-                    <!-- slingle app image -->
-                    <div class="single-app-image">
-                        <img src="/landing/assets/img/feature/app-img3.png" data-rjs="2" alt="">
-                    </div>
-                    <!-- slingle app image -->
-
-                    <!-- slingle app image -->
-                    <div class="single-app-image">
-                        <img src="/landing/assets/img/feature/app-img4.png" data-rjs="2" alt="">
-                    </div>
-                    <!-- slingle app image -->
-
-                    <!-- slingle app image -->
-                    <div class="single-app-image">
-                        <img src="/landing/assets/img/feature/app-img5.png" data-rjs="2" alt="">
-                    </div>
-                    <!-- slingle app image -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End of app screen -->
-
-    <!-- app pricing plan -->
-    <section class="pb-90" id='pricing'>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-12 col-lg-8">
-                    <!-- section title -->
-                    <div class="section-title text-center">
-                        <h2>Choose Plans & Pricing</h2>
-                        <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt    mollit lorem ipsum anim id est laborum perspiciatis unde.</p>
-                    </div>
-                    <!-- End of section title -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="price-nav-wrap">
-                        <!-- price nav -->
-                        <div class="price--nav-inner">
-                            <nav>
-                                <div class="nav info-tabs">
-                                    <a class="price--nav-item active" id="nav-contact-tab" data-toggle="tab" href="#month">Monthly</a>
-                                    <a class="price--nav-item" data-toggle="tab" href="#year">Yearly</a>
-                                </div>
-                            </nav>
-                        </div>
-                        <!-- End of price nav -->
-                    </div>
-                    <!-- nav tab content -->
-                    <div class="tab-content price-content">
-                        <div class="tab-pane fade active show" id="month" role="tabpanel">
-                            <div class="row">
-                                <div class="col-md-6 col-lg-4">
-                                    <!--Single price plan -->
-                                    <div class="single-price-plan text-center">
-                                        <div class="single-price-top">
-                                            <h4>Standard</h4>
-                                            <span>$20</span>
-                                        </div>
-                                        <div class="single-price-body">
-                                            <div class="price-list">
-                                                <ul>
-                                                    <li>
-                                                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-                                                        10 pages
-                                                    </li>
-                                                    <li>
-                                                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-                                                        500 gb storage
-                                                    </li>
-                                                    <li>
-                                                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-                                                        10 sdd Database
-                                                    </li>
-                                                    <li>
-                                                        <span><i class="fa fa-times" aria-hidden="true"></i></span>
-                                                        Free coustom domain
-                                                    </li>
-                                                    <li>
-                                                        <span><i class="fa fa-times" aria-hidden="true"></i></span>
-                                                        24/7 free support
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <a href="#" class="btn">Get Started</a>
-                                        </div>
-                                    </div>
-                                    <!--end of Single price plan -->
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <!--Single price plan -->
-                                    <div class="single-price-plan active text-center">
-                                        <div class="single-price-top">
-                                            <h4>Business</h4>
-                                            <span>$30</span>
-                                        </div>
-                                        <div class="single-price-body">
-                                            <div class="price-list">
-                                                <ul>
-                                                    <li>
-                                                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-                                                        10 pages
-                                                    </li>
-                                                    <li>
-                                                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-                                                        500 gb storage
-                                                    </li>
-                                                    <li>
-                                                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-                                                        10 sdd Database
-                                                    </li>
-                                                    <li>
-                                                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-                                                        Free coustom domain
-                                                    </li>
-                                                    <li>
-                                                        <span><i class="fa fa-times" aria-hidden="true"></i></span>
-                                                        24/7 free support
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <a href="#" class="btn">Get Started</a>
-                                        </div>
-                                    </div>
-                                    <!--end of Single price plan -->
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <!--Single price plan -->
-                                    <div class="single-price-plan text-center">
-                                        <div class="single-price-top">
-                                            <h4>Professional</h4>
-                                            <span>$40</span>
-                                        </div>
-                                        <div class="single-price-body">
-                                            <div class="price-list">
-                                                <ul>
-                                                    <li>
-                                                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-                                                        10 pages
-                                                    </li>
-                                                    <li>
-                                                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-                                                        500 gb storage
-                                                    </li>
-                                                    <li>
-                                                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-                                                        10 sdd Database
-                                                    </li>
-                                                    <li>
-                                                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-                                                        Free coustom domain
-                                                    </li>
-                                                    <li>
-                                                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-                                                        24/7 free support
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <a href="#" class="btn">Get Started</a>
-                                        </div>
-                                    </div>
-                                    <!--end of Single price plan -->
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="year" role="tabpanel">
-                            <div class="row">
-                                <div class="col-md-6 col-lg-4">
-                                    <!--Single price plan -->
-                                    <div class="single-price-plan text-center">
-                                        <div class="single-price-top">
-                                            <h4>Standard</h4>
-                                            <span>$200</span>
-                                        </div>
-                                        <div class="single-price-body">
-                                            <div class="price-list">
-                                                <ul>
-                                                    <li>
-                                                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-                                                        10 pages
-                                                    </li>
-                                                    <li>
-                                                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-                                                        500 gb storage
-                                                    </li>
-                                                    <li>
-                                                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-                                                        10 sdd Database
-                                                    </li>
-                                                    <li>
-                                                        <span><i class="fa fa-times" aria-hidden="true"></i></span>
-                                                        Free coustom domain
-                                                    </li>
-                                                    <li>
-                                                        <span><i class="fa fa-times" aria-hidden="true"></i></span>
-                                                        24/7 free support
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <a href="#" class="btn">Get Started</a>
-                                        </div>
-                                    </div>
-                                    <!--end of Single price plan -->
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <!--Single price plan -->
-                                    <div class="single-price-plan active text-center">
-                                        <div class="single-price-top">
-                                            <h4>Business</h4>
-                                            <span>$300</span>
-                                        </div>
-                                        <div class="single-price-body">
-                                            <div class="price-list">
-                                                <ul>
-                                                    <li>
-                                                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-                                                        10 pages
-                                                    </li>
-                                                    <li>
-                                                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-                                                        500 gb storage
-                                                    </li>
-                                                    <li>
-                                                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-                                                        10 sdd Database
-                                                    </li>
-                                                    <li>
-                                                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-                                                        Free coustom domain
-                                                    </li>
-                                                    <li>
-                                                        <span><i class="fa fa-times" aria-hidden="true"></i></span>
-                                                        24/7 free support
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <a href="#" class="btn">Get Started</a>
-                                        </div>
-                                    </div>
-                                    <!--end of Single price plan -->
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <!--Single price plan -->
-                                    <div class="single-price-plan text-center">
-                                        <div class="single-price-top">
-                                            <h4>Professional</h4>
-                                            <span>$400</span>
-                                        </div>
-                                        <div class="single-price-body">
-                                            <div class="price-list">
-                                                <ul>
-                                                    <li>
-                                                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-                                                        10 pages
-                                                    </li>
-                                                    <li>
-                                                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-                                                        500 gb storage
-                                                    </li>
-                                                    <li>
-                                                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-                                                        10 sdd Database
-                                                    </li>
-                                                    <li>
-                                                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-                                                        Free coustom domain
-                                                    </li>
-                                                    <li>
-                                                        <span><i class="fa fa-check" aria-hidden="true"></i></span>
-                                                        24/7 free support
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <a href="#" class="btn">Get Started</a>
-                                        </div>
-                                    </div>
-                                    <!--end of Single price plan -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of nav tab content -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End of app pricing plan -->
-
-    <!-- testimonial area -->
-    <section class="pt-120 pb-110 bg-2">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="testimonial-author-arousel text-center">
-                        <div class="testimonial-author-inner">
-                            <div class="author-carousel owl-carousel">
-                                <div class="single-author-imge">
-                                    <img src="/landing/assets/img/feature/author3.png" alt="">
-                                </div>
-                                <div class="single-author-imge">
-                                    <img src="/landing/assets/img/feature/author2.png" alt="">
-                                </div>
-                                <div class="single-author-imge">
-                                    <img src="/landing/assets/img/feature/author1.png" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="testimonial-author-comment text-center">
-                        <div class="author-comment-carousel owl-carousel">
-                            <div class="single-author-comment">
-                                <h4>This is due to their excellent service, competitive<br> pricing and customer support. It’s throughly<br> refresing to get such
-                                a personal touch.</h4>
-                                <p>Shirley Smith</p>
-                            </div>
-
-                            <div class="single-author-comment">
-                                <h4>This is due to their excellent service, competitive<br> pricing and customer support. It’s throughly<br> refresing to get such
-                                a personal touch.</h4>
-                                <p>Shirley Smith</p>
-                            </div>
-                            <div class="single-author-comment">
-                                <h4>This is due to their excellent service, competitive<br> pricing and customer support. It’s throughly<br> refresing to get such
-                                a personal touch.</h4>
-                                <p>Shirley Smith</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End of testimonial area -->
-
-    <!-- our partner -->
-    <section class="pt-120 pb-120">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <!-- partner carosel inner -->
-                    <div class="partner-carousel-wrap">
-                        <div class="partner-carousel owl-carousel">
-                            <!-- single partner -->
-                            <div class="single-partner">
-                                <img src="/landing/assets/img/partner2.png" alt="">
-                            </div>
-                            <!-- End of single partner -->
-    
-                            <!-- single partner -->
-                            <div class="single-partner">
-                                <img src="/landing/assets/img/partner2.png" alt="">
-                            </div>
-                            <!-- End of single partner -->
-    
-                            <!-- single partner -->
-                            <div class="single-partner">
-                                <img src="/landing/assets/img/partner2.png" alt="">
-                            </div>
-                            <!-- End of single partner -->
-    
-                            <!-- single partner -->
-                            <div class="single-partner">
-                                <img src="/landing/assets/img/partner2.png" alt="">
-                            </div>
-                            <!-- End of single partner -->
-                        </div>
-                    </div>
-                    <!--End of  partner carosel inner -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End of our partner -->
-
-    <!-- start blog area -->
-    <section class="border-top pt-115 pb-80" id='blog'>
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-8 col-md-12">
-                    <!-- section title -->
-                    <div class="section-title text-center">
-                        <h2>Our News & Articles</h2>
-                        <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt    mollit lorem ipsum anim id est laborum perspiciatis unde.</p>
-                    </div>
-                    <!-- End of section title -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-4">
-                    <!-- single blog inner -->
-                    <div class="single-blog-inner">
-                        <!-- blog image -->
-                        <div class="post-image">
-                            <a href="blog-details.html">
-                                <img src="/landing/assets/img/blog/blog1.png" alt="">
-                            </a>
-                            <div class="post-date">
-                                <p><span>30</span>Sep</p>
-                            </div>
-                        </div>
-                        <!--/.End of  blog image -->
-                
-                        <!-- post content -->
-                        <div class="post-content">
-                            <div class="post-details">
-                                <div class="post-info d-flex">
-                                    <a href="#"><span>By</span>Admin</a>
-                                    <a href="#"><span>1</span> Comment</a>
-                                </div>
-
-                                <div class="post-title">
-                                    <h3><a href="blog-details.html">Pre and Post Launch Mobile App Marketing Pitfalls to Avoid</a></h3>
-                                </div>
-                                <p>There are many variations of passages of available but majority have alteration in some by inject humour or random
-                                words.</p>
-                                <a class='blog-btn' href="blog-details.html">Read More</a>
-                            </div>
-                        </div><!-- /.End of post content -->
-                    </div><!-- /.End of single blog inner -->
-                </div>
-
-                <div class="col-lg-4 col-md-4">
-                    <!-- single blog inner -->
-                    <div class="single-blog-inner">
-                        <!-- blog image -->
-                        <div class="post-image">
-                            <a href="blog-details.html">
-                                <img src="/landing/assets/img/blog/blog2.png" alt="">
-                            </a>
-                            <div class="post-date">
-                                <p><span>11</span>Sep</p>
-                            </div>
-                        </div>
-                        <!--/.End of  blog image -->
-                
-                        <!-- post content -->
-                        <div class="post-content">
-                            <div class="post-details">
-                                <div class="post-info d-flex">
-                                    <a href="#"><span>By</span>Admin</a>
-                                    <a href="#"><span>2</span> Comments</a>
-                                </div>
-                
-                                <div class="post-title">
-                                    <h3><a href="blog-details.html">Nascetur Etiam tempus sit amet vestibulum quis variations.</a></h3>
-                                </div>
-                                <p>There are many variations of passages of available but majority have alteration in some by inject
-                                    humour or random
-                                    words.</p>
-                                <a class='blog-btn' href="blog-details.html">Read More</a>
-                            </div>
-                        </div><!-- /.End of post content -->
-                    </div><!-- /.End of single blog inner -->
-                </div>
-
-                <div class="col-lg-4 col-md-4">
-                    <!-- single blog inner -->
-                    <div class="single-blog-inner">
-                        <!-- blog image -->
-                        <div class="post-image">
-                            <a href="blog-details.html">
-                                <img src="/landing/assets/img/blog/blog3.png" alt="">
-                            </a>
-                            <div class="post-date">
-                                <p><span>20</span>Nov</p>
-                            </div>
-                        </div>
-                        <!--/.End of  blog image -->
-                
-                        <!-- post content -->
-                        <div class="post-content">
-                            <div class="post-details">
-                                <div class="post-info d-flex">
-                                    <a href="#"><span>By</span>Admin</a>
-                                    <a href="#"><span>5</span> Comments</a>
-                                </div>
-                
-                                <div class="post-title">
-                                    <h3><a href="blog-details.html">It is a long established fact that and reader will be distracted.</a></h3>
-                                </div>
-                                <p>There are many variations of passages of available but majority have alteration in some by inject
-                                    humour or random
-                                    words.</p>
-                                <a class='blog-btn' href="blog-details.html">Read More</a>
-                            </div>
-                        </div><!-- /.End of post content -->
-                    </div><!-- /.End of single blog inner -->
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end of blog artea -->
-
     <!-- download app -->
     <section class="border-top pt-110 pb-150">
         <div class="container">
@@ -739,11 +115,11 @@
                 <div class="col-lg-10 col-md-12">
                     <div class="download-app-inner text-center">
                         <h2 class="h1">
-                            Download our App Today &<br>
-                            Experience Endless Possibilities.
+                            Participate in the<br>
+                            WIFI Airdrop Pre-seed Phase
                         </h2>
-                        <h3>and get started with a free 1 month trial for your business</h3>
-                        <a href="#" class="btn">Download App</a>
+                        <h3>WIFI, is a high value token within the staking arbitrage network of liquidity pools. In the coming days, we will issue new tokens that will also provide liquidity to the system's pools.</h3>
+                        <nuxt-link to="/presale" class="btn">Join Airdrop</nuxt-link>
                     </div>
                 </div>
             </div>
@@ -757,6 +133,11 @@
 <script>
   export default {
     layout: 'landing',
+    data(){
+        return{
+            name:'WinFinance'
+        }
+    }
    
   }
 </script>

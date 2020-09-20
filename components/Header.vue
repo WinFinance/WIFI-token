@@ -17,9 +17,9 @@
             <!-- .topbar-nav-item -->
           </ul>
           <!-- .topbar-nav -->
-          <nuxt-link class="topbar-logo" to="/">
+          <a class="topbar-logo" href="/">
             <img src="assets/images/210 x 47.png" srcset="assets/images/210 x 47.png 2x" alt="logo" />
-          </nuxt-link>
+          </a>
           <ul class="topbar-nav">
             <li class="topbar-nav-item relative">
               <div class>

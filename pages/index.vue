@@ -118,7 +118,7 @@
               </div>
               <h2>Secure Purchases</h2>
               <p>{{name}} solves the issue of Uniswap exit scamming by using standardized non-custodial presale smart contracts that lock liquidity.</p>
-              <a href="/presale" class="btn">See Presale</a>
+              <a href="presale" class="btn">See Presale</a>
             </div>
             <!--End of user ineract text -->
           </div>
@@ -148,16 +148,20 @@
 
               <form @submit.stop.prevent="submit">
                 <div class="row">
-                  <div class="col">
+                  <div class="col form-group">
+                      <label for="email">Email address</label>
                     <input
                       type="email"
                       name="email"
+                      id="email"
                       v-model="email"
                       class="form-control"
                       placeholder="Your Email"
                     />
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                   </div>
-                  <div class="col">
+                  <div class="col form-group">
+                                            <label for="wallet">Wallet</label>
                     <input
                       type="text"
                       name="wallet"
@@ -169,11 +173,13 @@
                 </div>
                 <div class="row my-3">
                   <div class="col">
+                                            <label for="twitter">Twitter</label>
                     <label class="sr-only" for="inlineFormInputGroup">Twitter</label>
                     <div class="input-group mb-2">
                       <div class="input-group-prepend">
                         <div class="input-group-text">@</div>
                       </div>
+
                       <input
                         type="text"
                         name="twitter"
@@ -185,11 +191,13 @@
                     </div>
                   </div>
                   <div class="col">
+                                            <label for="tg">Telegram</label>
                     <label class="sr-only" for="inlineFormInputGroup">Telegram</label>
                     <div class="input-group mb-2">
                       <div class="input-group-prepend">
                         <div class="input-group-text">@</div>
                       </div>
+
                       <input
                         type="text"
                         name="telegram"
@@ -201,11 +209,18 @@
                     </div>
                   </div>
                 </div>
+                <div class="row">
+                    <div class="col">
+                         <label for='terms'>
+      <input id='terms' type='checkbox' v-model='terms' /> I accept <nuxt-link to="/terms">terms!!!</nuxt-link>
+    </label>
+                    </div>
+                </div>
                         <p class="text-success bolder">{{submitted}}</p>
                 <p class="text-danger bolder">{{failed}}</p>
                 <p class="text-info bolder">{{notif}}</p>
 
-              <button @click="sendForm" class="btn">Join Airdrop</button>
+              <button @click="sendForm" :disabled='isDisabled' class="btn">Join Airdrop</button>
               </form>
             </div>
           </div>
@@ -230,7 +245,10 @@ export default {
       twitter:'',
       submitted: '',
       failed:'',
-        notif: ''
+        notif: '',
+        terms: false
+        
+        
     };
   },
   methods: {
@@ -249,26 +267,12 @@ export default {
         .then(response => this.notif = '')
         .catch(error => this.failed = error.message)
        
-    },
-    // async sendForm() {
-    //   try {
-    //     let data = new FormData();
-    //     data.append("email", this.email);
-    //     data.append("twitter", this.twitter);
-    //     data.append("telegram", this.telegram);
-    //     data.append("wallet", this.wallet);
-    //     fetch(
-    //       "https://script.google.com/macros/s/AKfycbxukw_bpvnnZ3phBKsCXaDA_S6jM6E5UvowCSuP9ApcwTf5sNI/exec"
-    //     )
-    //       .then((response) => response.json())
-    //       .then((data) => console.log(data));
-    //     // let result = await this.$axios.$post('/exec', data);
-
-    //     //             this.$router.push("/success");
-    //   } catch (err) {
-    //     console.log(err);
-    //   }
-    // },
+    }
   },
+  computed: {
+  	isDisabled: function(){
+        return !this.terms;
+    }
+  }
 };
 </script>

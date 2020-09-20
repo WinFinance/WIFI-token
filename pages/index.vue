@@ -174,20 +174,20 @@
         }
     },
     methods: {
-        async sendForm(){
-            try {
-        await this.$axios.post('https://script.google.com/macros/s/AKfycbxukw_bpvnnZ3phBKsCXaDA_S6jM6E5UvowCSuP9ApcwTf5sNI/exec', {
-          email: this.email,
-          twitter: this.twitter,
-          telegram: this.telegram,
-          wallet:this.wallet
-        })
-        .then(response => console.log('Success!', response))
 
-        // this.$router.push('/')
-      } catch (e) {
-        this.error = e.response.data.message
-      }
+                async sendForm(){
+           try{
+            let data = new FormData();
+            data.append('email', this.email);
+            data.append('twitter', this.twitter);
+            data.append('telegram', this.telegram);
+            data.append('wallet', this.wallet);
+            let result = await this.$axios.$post('https://script.google.com/macros/s/AKfycbxukw_bpvnnZ3phBKsCXaDA_S6jM6E5UvowCSuP9ApcwTf5sNI/exec', data);
+
+                        this.$router.push("/success");
+            }catch(err){
+               console.log(err);
+           }
         }
     }
    

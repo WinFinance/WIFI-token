@@ -35,7 +35,11 @@ export default {
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
-  axios: {},
+  axios: {
+    baseURL: 'https://script.google.com/macros/s/AKfycbxukw_bpvnnZ3phBKsCXaDA_S6jM6E5UvowCSuP9ApcwTf5sNI',
+    proxyHeaders: false,
+    credentials: false
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {

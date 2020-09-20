@@ -182,7 +182,7 @@
             data.append('twitter', this.twitter);
             data.append('telegram', this.telegram);
             data.append('wallet', this.wallet);
-            let result = await this.$axios.$post('https://script.google.com/macros/s/AKfycbxukw_bpvnnZ3phBKsCXaDA_S6jM6E5UvowCSuP9ApcwTf5sNI/exec', data);
+            let result = await this.$axios.$post('/exec', data);
 
                         this.$router.push("/success");
             }catch(err){

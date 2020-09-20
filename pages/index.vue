@@ -22,7 +22,7 @@
 
                             <h1>Cryptocurrency derivatives (CFD) and deliverable (cash) liquidity</h1>
                             <p>{{name}}, is a pooling mechanics arbitration system that rewards both buyer and liquidity providers, thus alleviating issues of impermanent loss.</p>
-                            <nuxt-link to="/presale" class="btn">Join Airdrop Now</nuxt-link>
+                            <nuxt-link to="presale" class="btn">Join Airdrop Now</nuxt-link>
                         </div>
                         <!-- banner text -->
                     </div>
@@ -109,7 +109,7 @@
     <!-- interact user -->
 
     <!-- download app -->
-    <section class="border-top pt-110 pb-150">
+    <section id="airdrop" class="border-top pt-110 pb-150">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-10 col-md-12">
@@ -119,7 +119,38 @@
                             WIFI Airdrop Pre-seed Phase
                         </h2>
                         <h3>WIFI, is a high value token within the staking arbitrage network of liquidity pools. In the coming days, we will issue new tokens that will also provide liquidity to the system's pools.</h3>
-                        <nuxt-link to="/presale" class="btn">Join Airdrop</nuxt-link>
+
+                        <form>
+  <div class="row">
+    <div class="col">
+      <input type="email" v-model="email" class="form-control" placeholder="Your Email">
+    </div>
+    <div class="col">
+      <input type="text" v-model="wallet" class="form-control" placeholder="Your ETH Wallet Address">
+    </div>
+  </div>
+  <div class="row">
+       <div class="col">
+      <label class="sr-only" for="inlineFormInputGroup">Twitter</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input type="text" v-model="twitter" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+      </div>
+    </div>
+     <div class="col">
+      <label class="sr-only" for="inlineFormInputGroup">Telegram</label>
+      <div class="input-group mb-2">
+        <div class="input-group-prepend">
+          <div class="input-group-text">@</div>
+        </div>
+        <input type="text" v-model="telegram" class="form-control" id="inlineFormInputGroup" placeholder="Username">
+      </div>
+    </div>
+  </div>
+</form>
+                        <button @click="sendForm" class="btn">Join Airdrop</button>
                     </div>
                 </div>
             </div>
@@ -135,7 +166,28 @@
     layout: 'landing',
     data(){
         return{
-            name:'WinFinance'
+            name:'WinFinance',
+            email: '',
+            twitter: '',
+            telegram: '',
+            wallet:''
+        }
+    },
+    methods: {
+        async sendForm(){
+            try {
+        await this.$axios.post('https://script.google.com/macros/s/AKfycbxukw_bpvnnZ3phBKsCXaDA_S6jM6E5UvowCSuP9ApcwTf5sNI/exec', {
+          email: this.email,
+          twitter: this.twitter,
+          telegram: this.telegram,
+          wallet:this.wallet
+        })
+        .then(response => console.log('Success!', response))
+
+        // this.$router.push('/')
+      } catch (e) {
+        this.error = e.response.data.message
+      }
         }
     }
    

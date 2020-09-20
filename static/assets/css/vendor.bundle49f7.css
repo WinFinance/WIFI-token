@@ -25,7 +25,7 @@ table.dataTable{clear:both;margin-top:6px !important;margin-bottom:6px !importan
 @keyframes promoBG {
     0%,
     100% {
-        background: #2c80ff
+        background: #259292
     }
     33% {
         background: #7668fe
@@ -186,7 +186,7 @@ table.dataTable{clear:both;margin-top:6px !important;margin-bottom:6px !importan
 }
 
 .theme-defalt {
-    background: #2c80ff
+    background: #259292
 }
 
 .theme-violet {
@@ -213,7 +213,7 @@ table.dataTable{clear:both;margin-top:6px !important;margin-bottom:6px !importan
 @keyframes colorchange {
     0%,
     100% {
-        color: #2c80ff
+        color: #259292
     }
     20% {
         color: #455e84

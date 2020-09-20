@@ -118,7 +118,7 @@
               </div>
               <h2>Secure Purchases</h2>
               <p>{{name}} solves the issue of Uniswap exit scamming by using standardized non-custodial presale smart contracts that lock liquidity.</p>
-              <a href="#" class="btn">See Presale</a>
+              <a href="/presale" class="btn">See Presale</a>
             </div>
             <!--End of user ineract text -->
           </div>
@@ -146,7 +146,7 @@
               </h2>
               <h3>WIFI, is a high value token within the staking arbitrage network of liquidity pools. In the coming days, we will issue new tokens that will also provide liquidity to the system's pools.</h3>
 
-              <form name="submit-to-google-sheet">
+              <form @submit.stop.prevent="submit">
                 <div class="row">
                   <div class="col">
                     <input
@@ -201,7 +201,11 @@
                     </div>
                   </div>
                 </div>
-              <button @click.stop.prevent="sendForm" class="btn">Join Airdrop</button>
+                        <p class="text-success bolder">{{submitted}}</p>
+                <p class="text-danger bolder">{{failed}}</p>
+                <p class="text-info bolder">{{notif}}</p>
+
+              <button @click="sendForm" class="btn">Join Airdrop</button>
               </form>
             </div>
           </div>
@@ -223,11 +227,17 @@ export default {
       email: '',
       telegram:'',
       wallet:'',
-      twitter:''
+      twitter:'',
+      submitted: '',
+      failed:'',
+        notif: ''
     };
   },
   methods: {
     async sendForm(){
+        this.submitted = '';
+        this.notif = 'Sending...'
+        this.failed = '';
         let data = new FormData();
          data.append("email", this.email);
          data.append("twitter", this.twitter);
@@ -235,8 +245,10 @@ export default {
          data.append("wallet", this.wallet);
 
         fetch(scriptURL, { method: 'POST', body: data})
-      .then(response => console.log('Success!', response))
-      .catch(error => console.error('Error!', error.message))
+      .then(response => this.submitted = 'Submitted Successfully')
+        .then(response => this.notif = '')
+        .catch(error => this.failed = error.message)
+       
     },
     // async sendForm() {
     //   try {

@@ -13,8 +13,8 @@
                             <!-- footer social area -->
                             <div class="footer-social-area">
                                 <ul class="social-icons social-icons-light nav d-flex justify-content-center">
-                                    <li><a href="#" target="_blank"><i class="fa fa-telegram"></i></a></li>
-                                    <li><a href="#" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="https://t.me/winfinanceofficial" target="_blank"><i class="fa fa-telegram"></i></a></li>
+                                    <li><a href="https://twitter.com/WifiDefi" target="_blank"><i class="fa fa-twitter"></i></a></li>
                                 </ul>
                             </div>
                             <!-- End of footer social area -->

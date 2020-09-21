@@ -73,7 +73,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="https://twitter.com/WifiDefi">
                       <em class=" ikon fab fa-twitter"></em>
                     </a>
                   </li>

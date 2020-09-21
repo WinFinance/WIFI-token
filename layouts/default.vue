@@ -16,17 +16,16 @@ export default {
   },
   head(){
     return{
-      title: 'winfinance',
+      title: 'WinFinance DeFi - ICO Channel',
     bodyAttrs: {
       class: 'page-user'
     },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' }
+      { hid: 'description', name: 'description', content: 'WinFinance offers solution which aggregates cryptocurrency exchanges, non-bank liquidity providers, Forex brokers, cryptocurrency brokers, OTC orders of institutional clients, hedge funds and thousands of client-broker orders' }
     ],
     link: [
-      { rel: 'icon', type: 'image', href: '/favicon.png' },
       { rel: 'stylesheet', href: '/assets/css/vendor.bundle49f7.css'},
       { rel: 'stylesheet', href:'/assets/css/style49f7.css',  id:'layoutstyle'}
     ],

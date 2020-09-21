@@ -1755,9 +1755,9 @@ div.dataTables_wrapper div.dataTables_paginate ul.pagination {
   border-color: #68798b;
 }
 .btn-light-alt {
-  color: #495463;
-  background: #e6effb;
-  border-color: #e6effb;
+  color: #ffffff;
+  background: #259292;
+  border-color: #259292;
 }
 .btn-light-alt:disabled,
 .btn-light-alt:hover,

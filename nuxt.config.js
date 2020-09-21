@@ -7,7 +7,7 @@ export default {
       { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image', href: '/favicon.png' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon-150.png' }
     ]
   },
   generate: {
@@ -36,9 +36,6 @@ export default {
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {
-    baseURL: 'https://script.google.com/macros/s/AKfycbxukw_bpvnnZ3phBKsCXaDA_S6jM6E5UvowCSuP9ApcwTf5sNI',
-    proxyHeaders: false,
-    credentials: false
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

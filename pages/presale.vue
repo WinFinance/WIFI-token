@@ -20,8 +20,6 @@
                         id="token-base-amount"
                         class="input-bordered input-with-hint"
                         type="number"
-                        min="0.41"
-                        max="20"
                         v-model="ethMinimum"
                       />
                       <div class="token-pay-currency">
@@ -36,7 +34,6 @@
                       </div>
                     </div>
                   </div>
-                  {{ethMinimum}}
                   <div class="token-calc-note note note-plane">
                     <div v-show="ethMinimum < 0.42">
                       <em class="fas fa-times-circle text-danger"></em>
@@ -94,7 +91,7 @@
                 <div class="pay-notes">
                   <div class="note note-plane note-light note-md font-italic">
                     <em class="fas fa-info-circle"></em>
-                    <p>
+                    <p>return (this.ethMinimum * this.wifiRate).toFixed(2);
                       {{name}} Tokens will appear in your account after payment is successfully made and approved by our team.
                       <br class="d-none d-lg-block" />
                       Please note that, {{name}} tokens will be distributed at the end of the {{fullName}} ICO Token Sales.
@@ -227,7 +224,7 @@
                     </a>
                   </li>
                   <li>
-                    <a href="#">
+                    <a href="https://twitter.com/WifiDefi">
                       <em class="fab fa-twitter"></em>
                     </a>
                   </li>
@@ -372,7 +369,6 @@
               data-dismiss="modal"
               data-toggle="modal"
               data-target="#pay-confirm"
-              @click="openMetamask"
             >
               Buy Tokens Now
               <em class="ti ti-arrow-right mgl-4-5x"></em>
@@ -403,7 +399,6 @@
 </template>
 
 <script>
-  import Web3 from 'web3';
 
 export default {
   data() {
@@ -414,13 +409,13 @@ export default {
       ethMinimum: 0.42,
       preSaleAddress: '0xbb2Ffe23258d5431a531e15d435C5497a77a91bb',
       telegram: 'https://t.me/winfinanceofficial',
-      twitter:'',
-      github:''
+      twitter:'https://twitter.com/WifiDefi',
+      github:'',
     };
   },
   computed: {
     wifiAmount() {
-      return (this.ethMinimum * this.wifiRate).toFixed(2);
+     return (1200 * this.ethMinimum);
     },
     saleBonus() {
       return (this.wifiAmount * 0.2).toFixed(2);

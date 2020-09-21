@@ -32,7 +32,7 @@ export default {
           {
             hid: 'description',
             name: 'description',
-            content: 'My custom description'
+            content: 'WinFinance offers solution which aggregates cryptocurrency exchanges, non-bank liquidity providers, Forex brokers, cryptocurrency brokers, OTC orders of institutional clients, hedge funds and thousands of client-broker orders'
           },
         ],
         link:[

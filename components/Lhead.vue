@@ -20,7 +20,7 @@
                         </div>
                         <div class="col-lg-3 col-md-4 col-sm-5">
                             <div class="urgent-call text-right">
-                               <nuxt-link to="#airdrop" class="btn">Join Airdrop</nuxt-link>
+                               <a href="/presale" class="btn">Presale</a>
                             </div>
                         </div>
                     </div>

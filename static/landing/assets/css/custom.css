@@ -1,4 +1,138 @@
 /*==================================================================================
     Custom Stylesheet (Any custom styling you want to apply should be defined here).
 ====================================================================================*/
+.dQLxbh {
+    color: rgb(241, 241, 242);
+}
+.gvRgUB {
+    box-sizing: border-box;
+    min-width: 0px;
+    width: 100%;
+}
+.htNdrW {
+    box-sizing: border-box;
+    min-width: 0px;
+    margin-left: 32px;
+    margin-right: 32px;
+    padding-top: 32px;
+    padding-bottom: 64px;
+}
+.gRBAcL {
+    box-sizing: border-box;
+    min-width: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+}
+.iQWtjq {
+    display: flex;
+}
+.gcvGOQ {
+    box-sizing: border-box;
+    min-width: 0px;
+    flex-direction: column;
+    -moz-box-pack: center;
+    justify-content: center;
+    align-items: flex-start;
+}
+.yxste {
+    box-sizing: border-box;
+    min-width: 0px;
+    margin-bottom: 64px;
+    margin-top: 32px;
+    line-height: 1.4em;
+    font-size: 28px;
+    color: inherit;
+}
 
+.eyOBMB {
+    box-sizing: border-box;
+    min-width: 0px;
+    margin-left: -10px;
+    flex-direction: column;
+    -moz-box-pack: center;
+    justify-content: center;
+    -moz-box-align: center;
+    align-items: center;
+}
+.eSnIYG {
+    width: 2px;
+    height: 30px;
+    background: #259292 none repeat scroll 0% 0%;
+    margin: 0px 9px;
+}
+.hFrJIs {
+    box-sizing: border-box;
+    min-width: 0px;
+    width: 40px;
+    height: 40px;
+    border: 0px none;
+    flex-shrink: 0;
+}
+.lkOdot {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background: #259292 none repeat scroll 0% 0%;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.lkOdot::before {
+    content: "";
+    width: 2px;
+    height: 20px;
+    background: #259292 none repeat scroll 0% 0%;
+    position: absolute;
+    bottom: 20px;
+    left: 9px;
+}
+.HwPIw {
+    position: absolute;
+    right: 35px;
+    font-weight: 500;
+    font-size: 22px;
+    width: 40vw;
+    text-align: right;
+    color: #fff;
+}   
+.bEVbtC {
+    position: absolute;
+    left: 35px;
+    font-size: 20px;
+    width: 40vw;
+    text-align: left;
+    color: rgb(231, 231, 232);
+}
+.lkOdot::after {
+    content: "";
+    width: 2px;
+    height: 30px;
+    background: #259292 none repeat scroll 0% 0%;
+    position: absolute;
+    top: 20px;
+    left: 9px;
+}                     
+
+
+/* :::::::::::::::::::MOBILE::::::::::::::::::::::::: */
+
+@media only screen and (max-width: 500px) {
+    .eSnIYG {
+        height: 60px;
+    }
+    .HwPIw {
+    left: 35px;
+    top: -30px;
+    text-align: left;
+    width: 80vw;
+}
+    .bEVbtC {
+        width: 80vw;
+    }
+    .htNdrW {
+        margin-left: 32px;
+        
+    }
+ 
+}

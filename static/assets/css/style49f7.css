@@ -5564,7 +5564,6 @@ select.select-sm {
   font-weight: 700;
   margin-bottom: 17px;
   background: -webkit-linear-gradient(#259292, #259292);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0.9;
 }

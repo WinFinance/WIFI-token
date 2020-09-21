@@ -146,9 +146,17 @@
               </h2>
               <h3>WIFI, is a high value token within the staking arbitrage network of liquidity pools. In the coming days, we will issue new tokens that will also provide liquidity to the system's pools.</h3>
 
+<h4 class="title">Steps to Participate</h4>
+              <ol class="list-group mb-2">
+                <li class="list-group-item">Follow us on twitter <a href="https://twitter.com/WifiDefi">@WifiDefI</a> </li>
+                <li class="list-group-item">Retweet the pinned post and tag 3 of your friends</li>
+                <li class="list-group-item">Join the Official Telegram <a href="https://t.me/winfinanceofficial"><b>HERE</b></a> </li>
+                <li class="list-group-item">Send Your Details in the form below for verification</li>
+              </ol>
+
               <form @submit.stop.prevent="submit">
-                <div class="row">
-                  <div class="col form-group">
+                <div class="row mt-2">
+                  <div class="col-md-6 col-sm-12 form-group">
                       <label for="email">Email address</label>
                     <input
                       type="email"
@@ -160,7 +168,7 @@
                     />
                         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                   </div>
-                  <div class="col form-group">
+                  <div class="col-md-6 col-sm-12 form-group">
                                             <label for="wallet">Wallet</label>
                     <input
                       type="text"
@@ -170,10 +178,8 @@
                       placeholder="Your ETH Wallet Address"
                     />
                   </div>
-                </div>
-                <div class="row my-3">
-                  <div class="col">
-                                            <label for="twitter">Twitter</label>
+                  <div class="col-md-6 col-sm-12">
+                                            <label for="twitter" class="bolder">Twitter</label>
                     <label class="sr-only" for="inlineFormInputGroup">Twitter</label>
                     <div class="input-group mb-2">
                       <div class="input-group-prepend">
@@ -190,8 +196,8 @@
                       />
                     </div>
                   </div>
-                  <div class="col">
-                                            <label for="tg">Telegram</label>
+                  <div class="col-md-6 col-sm-12">
+                                            <label for="tg" class="bold">Telegram</label>
                     <label class="sr-only" for="inlineFormInputGroup">Telegram</label>
                     <div class="input-group mb-2">
                       <div class="input-group-prepend">

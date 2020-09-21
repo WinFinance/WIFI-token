@@ -51,6 +51,9 @@
                 <h1>Cryptocurrency derivatives (CFD) and deliverable (cash) liquidity</h1>
                 <p>{{name}}, is a pooling mechanics arbitration system that rewards both buyer and liquidity providers, thus alleviating issues of impermanent loss.</p>
                 <nuxt-link to="#airdrop" class="btn">Join Airdrop Now</nuxt-link>
+              
+                               <a href="/presale" class="btn">Presale</a>
+                          
               </div>
               <!-- banner text -->
             </div>

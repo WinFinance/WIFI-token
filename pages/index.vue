@@ -111,7 +111,7 @@
               </div>
               <h2>Community driven Project</h2>
               <p>The {{name}} team wanted to focus on incentivizing stakers to perform useful actions for the community by participating in a DAO. Between a transaction tax sent to the DAO fund, voting participation multiplier, and a referral program this is a truly community driven project</p>
-              <a href="#" class="btn">Get Started</a>
+              <a href="#" class="btn">Coming Soon</a>
             </div>
             <!--End of user ineract text -->
           </div>

@@ -362,7 +362,7 @@
                 <p class="text-danger bolder">{{failed}}</p>
                 <p class="text-info bolder">{{notif}}</p>
 
-                <button @click="sendForm" :disabled="isDisabled" class="btn">Join Airdrop</button>
+                <button @click="sendForm" :disabled="isDisabled" class="btn">Submit</button>
               </form>
             </div>
           </div>

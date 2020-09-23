@@ -132,7 +132,7 @@
               </div>
               <h2>Secure Purchases</h2>
               <p>{{name}} solves the issue of Uniswap exit scamming by using standardized non-custodial presale smart contracts that lock liquidity.</p>
-              <a href="presale" class="btn">See Presale</a>
+              <a href="presale" class="btn">Join Presale</a>
             </div>
             <!--End of user ineract text -->
           </div>

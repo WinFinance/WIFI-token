@@ -51,10 +51,11 @@
                 <h1>Cryptocurrency derivatives (CFD) and deliverable (cash) liquidity</h1>
                 <p>{{name}}, is a pooling mechanics arbitration system that rewards both buyer and liquidity providers, thus alleviating issues of impermanent loss.</p>
                 <!-- <nuxt-link to="#airdrop" class="btn">Join Airdrop Now</nuxt-link> -->
-                <h4 class="text-center">PreSale starts in</h4>
+                <h4 class="text-center">PreSale is LIVE</h4>
                 <no-ssr>
-                  <FlipCountdown deadline="2020-12-12 00:00:00" />
+                  <FlipCountdown deadline="2020-10-01 00:00:00" />
                 </no-ssr>
+                <h6 class="text-center">Ends October 1, 2020</h6>
 
                 <div class="mx-auto text-center">
                   <a href="/presale" class="btn">Presale</a>
@@ -78,11 +79,39 @@
     <section class="pb-110" id="features">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-md-12 col-lg-8">
+          <div class="col-md-12 col-lg-10">
             <!-- section title -->
-            <div class="section-title text-center mt-2">
+            <div class="section-title mt-2">
               <h2>How {{name}} Works</h2>
               <p>{{name}} offers solution which aggregates cryptocurrency exchanges, non-bank liquidity providers, Forex brokers, cryptocurrency brokers, OTC orders of institutional clients, hedge funds and thousands of client-broker orders. This enables us to create the deepest liquidity pool in the industry.</p>
+
+              <p>
+                <span class="bolder">"Liquidity pools"</span> are levels at which price frequently “makes a decision” as large amount of orders hit the market. They are, so to speak, intersections of orders. This is helpful for managing open trades, initiating new trades, and adjusting stop losses. While it’s impossible to avoid losses in the market, it is important to understand the where and why of the market’s reaction. </br>
+
+Traders who do trade above this size find liquidity to be a very real issue. They cannot think about the markets like common retail traders. Instead, they need to factor in what a platform could offer them. 
+              </p>
+              <p>
+                This is where WinFinance comes to plac. We would provide liquidity in order to deploy medium to big size traders executions without moving the market with:
+                </p>
+                <ol>
+                  <li>
+                    <b>Liquidity referral bonus-</b>
+                     Adding a clause for an existing liquidity provider to refer more liquidity providers on the platform
+                  </li>
+                  <li>
+                    <b>Flash pause -</b>
+                    When you provide liquidity as an individual, you can set a stop loss or paused flash in anticipation of an unforeseen events. <br/>
+                    Roll over bonus ahead for maximum of 30 days- 
+Any liquidity provider may turn on roll back system. This means your reward can be automatically polled back to the system for more reward.
+<br/>
+OCT- A decentralised OCT calculator and escrow for a decentralised mutual transaction
+
+                  </li>
+                  <li>
+                    <b>Excess liquidity lending -</b>
+                    A market place where you can lend liquidity for an emergency sell off.
+                  </li>
+                </ol>              
             </div>
             <!-- End of section title -->
           </div>
@@ -147,6 +176,15 @@
       </div>
     </section>
     <!-- interact user -->
+
+    <!-- tokenmetrics -->
+    <section class="section">
+      <div class="container-fluid bg-secondary">
+        <div class="row justify-content-center">
+          <img src="/landing/assets/img/feature/chart.jpg" alt="tokenmetrics">
+        </div>
+      </div>
+    </section>
     <!-- roadmap -->
     <div width="100%" id="roadmap" class="Box-sc-1glcpxh-0 gvRgUB bg-dark">
       <div class="Box-sc-1glcpxh-0 htNdrW">
